@@ -38,6 +38,8 @@ echo"
 <th>hourly rate</th>
 <th>department</th>
 <th>year</th>
+<th>Action</th>
+<th>Action</th>
 </tr>
 ";
 
@@ -83,6 +85,11 @@ echo"
 <td>".$row['hourly_rate']."</td>
 <td>".$row['department']."</td>
 <td>".$row['year']."</td>
+<td>
+<a href='delete.php?student_id=".$row['student_id']."'>delete</a>
+</td>
+<td>
+<a href='update.php?student_id=".$row['student_id']."'>update</a>
 </tr>
 
 ";
